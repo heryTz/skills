@@ -10,17 +10,6 @@ Personal collection of agent skills for Claude Code.
 
 - [hello-world](./skills/misc/hello-world/SKILL.md) — Greet the user by name. Use to test that skills are working.
 
-## Structure
-
-```
-skills/
-├── engineering/   — code-related skills (form patterns, testing, tooling)
-├── productivity/  — workflow skills
-├── misc/          — demo or rarely-used skills
-├── in-progress/   — drafts, not published
-└── deprecated/    — obsolete skills, not published
-```
-
 ## Install
 
 ```bash

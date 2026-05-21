@@ -2,6 +2,7 @@
   "name": "hery-skills",
   "skills": [
     "./skills/engineering/tanstack-form",
-    "./skills/misc/hello-world"
+    "./skills/misc/hello-world",
+    "./skills/productivity/ship-branch"
   ]
 }

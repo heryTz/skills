@@ -1,0 +1,7 @@
+{
+  "name": "streamer-skills",
+  "skills": [
+    "./skills/engineering/tanstack-form",
+    "./skills/misc/hello-world"
+  ]
+}

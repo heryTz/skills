@@ -1,19 +1,30 @@
-# Agent Skills
+# Skills
 
-A collection of agent skills that extend capabilities across development and tooling.
+Personal collection of agent skills for Claude Code.
 
-## Demo
+## Engineering
 
-- **hello-world** — Greet the user by name. Use when saying hello or testing that skills work.
+- [tanstack-form](./skills/engineering/tanstack-form/SKILL.md) — Create or modify forms using TanStack Form's composition API (`withForm`, `withFieldGroup`, `extendForm`), Zod validation, and i18n-aware error messages.
 
-  ```
-  npx skills@latest add heryTz/skills/hello-world
-  ```
+## Misc
 
-## Forms
+- [hello-world](./skills/misc/hello-world/SKILL.md) — Greet the user by name. Use to test that skills are working.
 
-- **tanstack-form** — Use when creating or modifying forms. Enforces `useAppForm`, dedicated field components, and declarative mutation patterns with `onSuccess` callbacks.
+## Structure
 
-  ```
-  npx skills@latest add heryTz/skills/tanstack-form
-  ```
+```
+skills/
+├── engineering/   — code-related skills (form patterns, testing, tooling)
+├── productivity/  — workflow skills
+├── misc/          — demo or rarely-used skills
+├── in-progress/   — drafts, not published
+└── deprecated/    — obsolete skills, not published
+```
+
+## Install
+
+```bash
+npx skills@latest add heryTz/skills
+```
+
+Pick the skills you want and which coding agents to install them on.

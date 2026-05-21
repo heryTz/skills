@@ -106,9 +106,14 @@ Invoke the `loop` skill with no interval (dynamic mode). Dynamic mode uses `Sche
 **Merge** (standard merge commit format):
 
 ```bash
-gh pr merge "$(gh pr view --json number -q '.number')" --merge \
-  --subject "Merge pull request #$(gh pr view --json number -q '.number') from $(gh repo view --json owner -q '.owner.login')/$(git rev-parse --abbrev-ref HEAD)" \
-  --body "$(gh pr view --json title -q '.title')"
+PR_NUMBER=$(gh pr view --json number -q '.number')
+REPO_OWNER=$(gh repo view --json owner -q '.owner.login')
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+PR_TITLE=$(gh pr view --json title -q '.title')
+
+gh pr merge "$PR_NUMBER" --merge \
+  --subject "Merge pull request #${PR_NUMBER} from ${REPO_OWNER}/${BRANCH}" \
+  --body "$PR_TITLE"
 ```
 
 **Cleanup** (always runs after merge):

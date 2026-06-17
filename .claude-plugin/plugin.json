@@ -3,6 +3,7 @@
   "skills": [
     "./skills/engineering/tanstack-form",
     "./skills/misc/hello-world",
-    "./skills/productivity/ship-branch"
+    "./skills/productivity/ship-branch",
+    "./skills/productivity/ship-branch-gitea"
   ]
 }

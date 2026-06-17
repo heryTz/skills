@@ -69,7 +69,7 @@ digraph ship_branch_gitea {
 
 ## Configuration
 
-Resolve these once, up front. **The API host is NOT derivable from an SSH remote** (Gitea SSH remotes are often a bare IP with a non-HTTP port, e.g. `ssh://git@194.164.72.200:30980/...`). Do not probe the SSH host/port for the API.
+Resolve these once, up front. **The API host is NOT derivable from an SSH remote** (Gitea SSH remotes are often a bare IP with a non-HTTP port, e.g. `ssh://git@198.51.100.42:2222/...`). Do not probe the SSH host/port for the API.
 
 ```bash
 # Token (required) — must already be exported
